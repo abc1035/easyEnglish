@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/word"
+        android:title="单词" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/exam"
+        android:title="考试" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/friends"
+        android:title="好友" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/mine"
+        android:title="我的" />
+
+</menu>

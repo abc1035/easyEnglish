@@ -1,0 +1,25 @@
+暂时不对内容进行嵌套
+1.通信，任务标识符--jsonid 备注：数字，每个json字符串必须有
+2.电子邮件--mail
+3.用户手机--userphonenumber
+4.用户id--userid
+5.单词英文--wordenglish
+6.单词中文--wordchinese
+7.单词音标--wordsymbol 备注：和数据库的不同
+8.单词例句--wordsentence
+9.用户昵称--username
+10.用户密码--userpassword
+11.用户单词组名--uservocabularygroupname
+12.组内单词--groupvocabulary
+13.群号--Groupid 备注：大写G区分与单词组的区别
+14.群名--Groupname
+15.验证码--verificationcode
+16.好友信息--friendinformation
+17.游戏--game
+其余的名称标准待定
+任务标识符
+1.手机号登录
+2.电子邮件登录
+3.电子邮件注册(发送验证码)
+4.电子邮件注册(注册)
+其余任务标准名称待定
