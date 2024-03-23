@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.WordActivity.WordReviewActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="396dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/word_review_star"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/colorGray"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="1dp" />
+            <TextView
+                android:id="@+id/word_review_exit"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorGray"
+                android:text="退出"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="复习"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/word_review_collect"
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_collected" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <ProgressBar
+                android:id="@+id/word_review_ProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="320dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:max="4"
+                android:progress="1" />
+
+            <TextView
+                android:id="@+id/word_review_Progress"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:text="1/4"
+                android:textSize="21dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_shape"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/word_review_ErrorReport"
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_shape"
+
+                android:text="纠错" />
+            <!--android:background="@drawable/btn_press"-->
+            <TextView
+                android:id="@+id/word_review_word"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="alliance"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp">
+
+                <TextView
+                    android:id="@+id/word_review_pronounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="[rɪˈzembl]"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/word_review_voice"
+                    style="@style/ButtonNoShadowStyle"
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/btn_pron"
+                    android:textColor="@color/colorMainWhite" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:id="@+id/word_review_stat1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/word_review_translate1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/ButtonNoShadowStyle"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:textColor="@color/colorDefaultGray"
+                android:text="vt. 背诵；叙述；列举vi. 背诵；叙述"
+                android:lineSpacingExtra="5dp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:id="@+id/word_review_stat2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/word_review_translate2"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/ButtonNoShadowStyle"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:textColor="@color/colorDefaultGray"
+                android:text="prep. 对，对抗；与……相对，与……相比"
+                android:lineSpacingExtra="5dp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:id="@+id/word_review_stat3"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/word_review_translate3"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/ButtonNoShadowStyle"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:textColor="@color/colorDefaultGray"
+                android:text="n. 联盟，联合；联姻"
+                android:lineSpacingExtra="5dp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:id="@+id/word_review_stat4"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/word_review_translate4"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/ButtonNoShadowStyle"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:textColor="@color/colorDefaultGray"
+                android:text="n. 牡蛎，[无脊椎] 蚝；沉默寡言的人"
+                android:lineSpacingExtra="5dp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/word_review_unknown"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:textColor="@color/colorDefaultGray"
+            android:text="不认识"
+            style="@style/ButtonNoShadowStyle"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/word_review_next"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/btn_press"
+            android:gravity="center"
+            android:textColor="@color/colorDefaultGray"
+            style="@style/ButtonNoShadowStyle"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

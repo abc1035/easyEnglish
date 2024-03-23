@@ -20,6 +20,7 @@ public class ConnectMessage
     }
     public static final String GetIpAddress()
     {
-        return "192.168.43.173";
+        return "192.168.1.110";
     }
+    public Integer GetPort() { return 6666; }
 }

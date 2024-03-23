@@ -1,0 +1,96 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/btn_shape">
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+            <!-- 顶一个SearchView -->
+            <Button
+                android:id="@+id/word_collect_create_exit"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_back"
+                style="@style/ButtonNoShadowStyle"
+                />
+
+            <TextView
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="创建分组" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorGray">
+
+            <EditText
+                android:id="@+id/word_collect_create_name"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:hint="请输入分组名" />
+
+            <EditText
+                android:id="@+id/word_collect_create_note"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:hint="请输入备注"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape">
+            <!-- 顶一个SearchView -->
+            <Button
+                android:id="@+id/word_collect_create_no"
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="取消" />
+            <Button
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@color/colorDefaultGray" />
+            <Button
+                android:id="@+id/word_collect_create_yes"
+                style="@style/ButtonNoShadowStyle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="确定" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

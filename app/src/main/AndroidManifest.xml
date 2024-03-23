@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.easyenglish">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
 
     <application
         android:allowBackup="true"
@@ -15,23 +20,38 @@
         android:roundIcon="@mipmap/easy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExamAcvitity.ExamToeflActivity"></activity>
-        <activity android:name=".ExamAcvitity.ExamIeltsActivity" />
-        <activity android:name=".ExamAcvitity.ExamCet6Activity" />
-        <activity android:name=".ExamAcvitity.ExamCet4Activity" />
+        <activity android:name=".Activity.ExamAcvitity.TranslatingActivity"></activity>
+        <activity android:name=".Activity.ExamAcvitity.ReadingActivity" />
+        <activity android:name=".Activity.ExamAcvitity.ListeningActivity" />
+        <activity android:name=".Activity.ExamAcvitity.WritingActivity" />
+        <activity android:name=".Activity.ExamAcvitity.ExamSelectActivity" />
+        <activity android:name=".Activity.ExamAcvitity.ToeflActivity" />
+        <activity android:name=".Activity.ExamAcvitity.IeltsActivity" />
+        <activity android:name=".Activity.ExamAcvitity.Cet6Activity" />
+        <activity android:name=".Activity.ExamAcvitity.Cet4Activity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activity.HomeActivity"
             android:label="@string/title_activity_home" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.WordActivity.WordSearchActivity" />
+        <activity android:name=".Activity.WordActivity.WordStudyActivity" />
+        <activity android:name=".Activity.WordActivity.WordReviewActivity" />
+        <activity android:name=".Activity.WordActivity.WordSettingActivity" />
+        <activity android:name=".Activity.WordActivity.WordStudiedActivity" />
+        <activity android:name=".Activity.WordActivity.WordSearchedActivity" />
+        <activity android:name=".Activity.WordActivity.WordCollectActivity" />
+        <activity android:name=".Activity.WordActivity.WordCollectedActivity" />
+        <activity android:name=".Activity.WordActivity.WordCollectingActivity" android:theme="@style/MyDialogStyle"></activity>
+        <activity android:name=".Activity.WordActivity.WordCollectCreateActivity" android:theme="@style/MyDialogStyle"></activity>
     </application>
 
 </manifest>

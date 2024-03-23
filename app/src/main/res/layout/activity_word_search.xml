@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    tools:context=".Activity.WordActivity.WordSearchActivity">
+    <!-- 顶一个SearchView -->
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/word_search_searchview"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape" />
+
+        <TextView
+            android:id="@+id/word_search_exit"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorGray"
+            android:gravity="center"
+            android:text="匹配查询"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <!-- 为SearchView定义自动补齐的ListView-->
+    <ListView
+        android:id="@+id/word_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorMainWhite"/>
+</LinearLayout>

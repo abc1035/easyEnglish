@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.WordActivity.WordCollectActivity">
+    <!-- 顶一个SearchView -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_shape">
+        <!-- 顶一个SearchView -->
+        <Button
+            android:id="@+id/word_collect_Exit"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back"
+            style="@style/ButtonNoShadowStyle"
+            />
+
+        <TextView
+            style="@style/ButtonNoShadowStyle"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_shape"
+
+            android:text="我的收藏" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/word_collect_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_shape">
+        <!-- 顶一个SearchView -->
+        <Button
+            android:id="@+id/word_collect_edit"
+            style="@style/ButtonNoShadowStyle"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="编辑分组" />
+        <Button
+            style="@style/ButtonNoShadowStyle"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+        <Button
+            android:id="@+id/word_collect_create"
+            style="@style/ButtonNoShadowStyle"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="新建分组" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#FF0099CC</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorMainBlue">#0000CD</color>
@@ -8,5 +8,13 @@
     <color name="colorLowerBlue">#87CEFF</color>
     <color name="colorGray">#EDEDED</color>
     <color name="colorBlack">#000000</color>
-    <color name="reddishblue">#4169E1</color><!--品蓝色 -->
+    <color name="colorReddishBlue">#4169E1</color><!--品蓝色 -->
+    <color name="normalcolor">#ff333333</color>
+    <color name="line_color">#dadada</color>
+    <color name="pressed_bgcolor">#D5D5D5</color>
+    <color name="colorDefaultGray">#757575</color>
+    <color name="colorDefaultGray2">#959595</color>
+    <color name="colorRed">#FF4040</color>
+    <color name="colorGreen">#32CD32</color>
+    <color name="colorTransparentBackground">#70000000</color>
 </resources>
